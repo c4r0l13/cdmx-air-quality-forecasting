@@ -1,0 +1,113 @@
+{
+  "data": {
+    "days": 3073,
+    "start": "2015-01-01",
+    "end": "2023-05-31"
+  },
+  "covid_change_pct": {
+    "no2": -36.0,
+    "co": -51.9,
+    "pm25": -14.1,
+    "o3": 9.8
+  },
+  "pm25_regression": {
+    "Persistence (today = tomorrow)": {
+      "MAE": 4.1715,
+      "skill_vs_persistence": 0.0,
+      "2019": 4.3308,
+      "2020": 4.0449,
+      "2021": 4.401,
+      "2022": 4.0795,
+      "2023": 3.7577
+    },
+    "Seasonal climatology": {
+      "MAE": 5.6828,
+      "skill_vs_persistence": -0.3623,
+      "2019": 5.7157,
+      "2020": 6.0731,
+      "2021": 5.8004,
+      "2022": 5.4904,
+      "2023": 4.832
+    },
+    "Ridge regression": {
+      "MAE": 3.7919,
+      "skill_vs_persistence": 0.091,
+      "2019": 4.4496,
+      "2020": 3.679,
+      "2021": 3.7212,
+      "2022": 3.5534,
+      "2023": 3.2188
+    },
+    "LightGBM": {
+      "MAE": 3.8252,
+      "skill_vs_persistence": 0.083,
+      "2019": 4.4445,
+      "2020": 3.6317,
+      "2021": 3.8917,
+      "2022": 3.6086,
+      "2023": 3.1557
+    }
+  },
+  "o3_regression": {
+    "Persistence (today = tomorrow)": {
+      "MAE": 4.7259,
+      "skill_vs_persistence": 0.0,
+      "2019": 4.7886,
+      "2020": 4.4908,
+      "2021": 4.8232,
+      "2022": 4.8559,
+      "2023": 4.5941
+    },
+    "Seasonal climatology": {
+      "MAE": 5.5954,
+      "skill_vs_persistence": -0.184,
+      "2019": 5.6141,
+      "2020": 5.729,
+      "2021": 5.5022,
+      "2022": 5.4897,
+      "2023": 5.708
+    },
+    "Ridge regression": {
+      "MAE": 4.1353,
+      "skill_vs_persistence": 0.125,
+      "2019": 4.1154,
+      "2020": 4.0249,
+      "2021": 4.2812,
+      "2022": 4.2658,
+      "2023": 3.7807
+    },
+    "LightGBM": {
+      "MAE": 4.2209,
+      "skill_vs_persistence": 0.1069,
+      "2019": 4.188,
+      "2020": 4.2204,
+      "2021": 4.2436,
+      "2022": 4.238,
+      "2023": 4.2054
+    }
+  },
+  "pm25_exceedance": {
+    "Persistence": {
+      "ROC-AUC": NaN,
+      "PR-AUC": NaN,
+      "Brier": 0.1695,
+      "recall@0.5": 0.6284,
+      "precision@0.5": 0.6267
+    },
+    "Logistic regression": {
+      "ROC-AUC": 0.9001,
+      "PR-AUC": 0.7192,
+      "Brier": 0.1056,
+      "recall@0.5": 0.6011,
+      "precision@0.5": 0.6832
+    },
+    "LightGBM": {
+      "ROC-AUC": 0.8977,
+      "PR-AUC": 0.7334,
+      "Brier": 0.1078,
+      "recall@0.5": 0.6503,
+      "precision@0.5": 0.6364
+    }
+  },
+  "exceedance_base_rate_test": 0.2271880819366853
+}
